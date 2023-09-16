@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula07</title>
+</head>
+<body>
+    <h1>Página Home</h1>
+    <% var texto = "trabalhando com ejs"; %>
+    <p><%= texto %></p>
+    <ul>
+
+        <% for(var chave in clientes){ %>
+            <li>Nome: <%=clientes[chave].nome %></li>
+            <li>Email: <%=clientes[chave].email %></li>
+        <% } %>
+    </ul>
+</body>
+</html>
